@@ -1,0 +1,11 @@
+{
+  "name": "lets-share",
+  "version": "1.0.0",
+  "description": "A Web application to share text and images",
+  "main": "index.js",
+  "scripts": {
+    "test": "test.js"
+  },
+  "author": "VeeSoftwareEngineeringClass",
+  "license": "ISC"
+}
