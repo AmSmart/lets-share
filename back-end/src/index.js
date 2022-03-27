@@ -1,5 +1,6 @@
 const express = require('express')
 const mongoose = require('mongoose');
+var cors = require('cors')
 
 const Schema = mongoose.Schema;
 
@@ -32,6 +33,7 @@ mongoose.connect('mongodb://localhost:27017/lets-share')
 const PORT = 3001
 const app = express()
 
+app.use(cors())
 app.use(express.json());
 app.use(express.urlencoded({ extended: true}));
 

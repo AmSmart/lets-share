@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.card{
+     background-color: indigo;
+     display: flex;
+     padding: 0px 20px 0px 20px;
+     width: 100%;
+     border: solid red 1px;
+     border-radius: 2px;
+}

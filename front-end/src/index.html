@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css" />
+    <link href="../dist/output.css" rel="stylesheet">
+    <script src="./index.js"></script>
+    <title>Let's Share</title>
+</head>
+
+<body>
+    <header class="text-center mb-5">
+        <h3 class="font-bold">Let's Share</h3>
+        <h6>Welcome to Let's Share</h6>
+        <p class="text-red-100">Here you can share your text and images for the whole world to see</p>
+    </header>
+
+    <main>
+        <div class="flex justify-around mb-40">
+            <!--Create a new Page-->
+            <div class="px-8 flex justify-center">
+                <div>
+                    <p class="font-bold">Create New Page</p>
+                    <input class="border border-red-100 outline-none px-2" placeholder="Page Name " type="text" />
+                    <button class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
+                        Create
+                    </button>
+                </div>
+            </div>
+
+            <!-- Navigate to an existing page-->
+            <div class="px-8 flex justify-center">
+                <div>
+                    <p class="font-bold">Enter Page Id</p>
+                    <input id="pageId" class="border border-red-100 outline-none px-2" placeholder="Page ID " type="text" />
+                    <button onclick="loadPageData()" class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
+                        Navigate
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!--Page Info goes here-->
+        <div>
+            <h3 class="font-bold mb-4 text-center">Page Info</h3>
+            <div id="list">
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
