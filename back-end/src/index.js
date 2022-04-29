@@ -83,7 +83,6 @@ app.post("/media", async (req, res) => {
     const media = new MediaModel({author_name, text, imageUrl, page_id})
     
     await media.save()
-    console.log("Media Saved Successfully")
     res.send()
 })
 

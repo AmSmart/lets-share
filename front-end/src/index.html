@@ -19,34 +19,46 @@
     </header>
 
     <main>
-        <div class="flex justify-around mb-40">
-            <!--Create a new Page-->
-            <div class="px-8 flex justify-center">
-                <div>
-                    <p class="font-bold">Create New Page</p>
-                    <input class="border border-red-100 outline-none px-2" placeholder="Page Name " type="text" />
-                    <button class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
-                        Create
-                    </button>
+        <div class="relative">
+            <div class="flex justify-around mb-40">
+                <!--Create a new Page-->
+                <div class="px-8 flex justify-center">
+                    <div>
+                        <p class="font-bold">Create New Page</p>
+                        <input class="border border-red-100 outline-none px-2" placeholder="Page Name " type="text" />
+                        <button class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
+                            Create
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Navigate to an existing page-->
+                <div class="px-8 flex justify-center">
+                    <div>
+                        <p class="font-bold">Enter Page Id</p>
+                        <input id="pageId" class="border border-red-100 outline-none px-2" placeholder="Page ID "
+                            type="text" />
+                        <button onclick="loadPageData()"
+                            class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
+                            Navigate
+                        </button>
+                    </div>
                 </div>
             </div>
 
-            <!-- Navigate to an existing page-->
-            <div class="px-8 flex justify-center">
-                <div>
-                    <p class="font-bold">Enter Page Id</p>
-                    <input id="pageId" class="border border-red-100 outline-none px-2" placeholder="Page ID " type="text" />
-                    <button onclick="loadPageData()" class="block px-2 border rounded mt-2 ml-auto mr-auto bg-red-100 hover:bg-red-300">
-                        Navigate
-                    </button>
+            <!--Page Info goes here-->
+            <div>
+                <h3 class="font-bold mb-4 text-center">Page Info</h3>
+                <div id="list">
                 </div>
             </div>
-        </div>
 
-        <!--Page Info goes here-->
-        <div>
-            <h3 class="font-bold mb-4 text-center">Page Info</h3>
-            <div id="list">
+            <div class="flex justify-center">
+                <div class="flex flex-row space-x-4 justify-center items-center mt-20">
+                    <label for="media">Media:</label>
+                    <input id="media" class="h-full border border-red-500" type="text" />
+                    <button onclick="addMediaToPage()" class="bg-red-100 text-white rounded hover:bg-red-300 px-2">Add Media</button>
+                </div>
             </div>
         </div>
     </main>
